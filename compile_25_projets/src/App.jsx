@@ -14,55 +14,62 @@ import ModalTest from "./components/custom-modal-popup/modal-test";
 import GithubProfileFinder from "./components/github-profile-finder";
 import SearchAutoComplete from "./components/search-autocomplete-with-api";
 import TicTacToe from "./components/tic-tac-toe";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
+import FeatureFlags from "./components/feature-flag";
 
 function App() {
     return (
         <>
             {/* import du composant générateur de QRCode */}
-            <QRCodeGenerator />
+            {/* <QRCodeGenerator /> */}
 
             {/* LightAndDark */}
-            <LightDarkMode />
+            {/* <LightDarkMode /> */}
 
             {/* Notre composants d'accordéon */}
-            <Accordian />
+            {/* <Accordian /> */}
 
             {/* Random Color Component */}
-            <RandomColor />
+            {/* <RandomColor /> */}
 
             {/* Star-Rating Component */}
-            <StarRating noOfStars={10} />
+            {/* <StarRating noOfStars={10} /> */}
 
             {/* Image Slider */}
-            <ImageSlider
+            {/* <ImageSlider
                 url={"https://picsum.photos/v2/list"}
                 page={"1"}
                 limit={"10"}
-            />
+            /> */}
 
             {/* Load more products components */}
-            <LoadMoreData />
+            {/* <LoadMoreData /> */}
 
             {/* TreeView Component / menu UI component / Navigation récursive */}
-            <TreeView menus={menus} />
+            {/* <TreeView menus={menus} /> */}
 
             {/* Scroll Indicator */}
-            <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+            {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
 
             {/* Tab Test component  */}
-            <TabTest />
+            {/* <TabTest /> */}
 
             {/* Custom modal component */}
-            <ModalTest />
+            {/* <ModalTest /> */}
 
             {/* Rechercher un utilisateur avec l'api de github */}
-            <GithubProfileFinder />
+            {/* <GithubProfileFinder /> */}
 
             {/* Recherche avec autocompletion */}
-            <SearchAutoComplete />
+            {/* <SearchAutoComplete /> */}
 
             {/* Jeux TicTacToe */}
-            <TicTacToe />
+            {/* <TicTacToe /> */}
+
+            {/* Implémentation des feature flags */}
+            <FeatureFlagGlobalState>
+                <FeatureFlags />
+            </FeatureFlagGlobalState>
         </>
     );
 }
